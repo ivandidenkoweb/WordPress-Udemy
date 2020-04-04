@@ -32,6 +32,8 @@ function filter_nav_menu_link_attributes($atts, $item, $args) {
             $atts['class'] .= ' header__nav-item-active';
         }
 
+        // print_r($item);
+
         if( $item->ID === 182 && ( in_category( 'soft_toys' ) || in_category( 'educ_toys' ))){
             $atts['class'] .= ' header__nav-item-active';
         }
